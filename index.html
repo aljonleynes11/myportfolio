@@ -14,12 +14,12 @@
 </head>
 
 <body class="slide-in-elliptic-top-bck">
-<div class="se-pre-con"></div>
-<div class="container-fluid mx-auto">
-<div class="row " style="padding-bottom:1rem; background-image: linear-gradient(to right, #fff 0%, #15b9fe 50% );" >
-	<div class="col-md-3 text-center" style="background-image: linear-gradient(to top, #15b9fe 0%, #330867 100%);" id="wavy1">
 
-		<div class="bg-muted mb-3 mt-3 text-white" style="width:18rems" id="card1">
+<div class="container-fluid mx-auto">
+<div class="row " style="padding-bottom:1rem;  background-image: linear-gradient(to right, #fff 0%,#fff 50%, #15b9fe 75% );" >
+	<div class="col-md-3 text-center" style="background-image: linear-gradient(to top, #15b9fe 0%, #330867 100%);" id="wavy1" >
+
+		<div class="bg-muted mb-3 mt-3 text-white" style="width:18rems" id="card1" >
 			<img src="img/me.jpg" class="card-img-top rounded-circle flip-vertical-right" alt="...">
 
 			<div class="card-body mt-2 p-1 text-white" style="border:none; " >
@@ -84,7 +84,7 @@
 
 
 <div class="row pb-3 bg-dark" style=" background-image: linear-gradient(to right, #fff 35%, #15b9fe 100% );"  > 
-	<div class="col-md-6 col-sm-12 p-3" style="border:none; padding-bottom:5rem; background-image: linear-gradient(-20deg, #2b5876 0%, #4e4376 100%);">
+	<!-- <div class="col-md-6 col-sm-12 p-3" style="border:none; padding-bottom:5rem; background-image: linear-gradient(-20deg, #2b5876 0%, #4e4376 100%);">
 		<h3 class="card-text text-white text-center "> Skills <br><br> </h3>
 		<ul class="list-unstyled">
 		<h3><li class="card-text text-white text-center"><strong>HTML : <i class="fas fa-star " style="color:yellow;"></i><i class="fas fa-star " style="color:yellow;"></i><i class="fas fa-star " style="color:yellow;"></i><i class="fas fa-star " style="color:yellow;"></i><i class="fas fa-star "></i></strong></li>
@@ -93,12 +93,13 @@
 		<li class="card-text text-white text-center"><strong>Photoshop: <i class="fas fa-star " style="color:yellow;"></i><i class="fas fa-star " style="color:yellow;"></i><i class="fas fa-star " style="color:yellow;"></i><i class="fas fa-star "></i><i class="fas fa-star "></i></strong></li>
 		</h3>
 		</ul>
-	</div>
-	<div class="col-md-6 col-sm-12 px-3 py-4 bg-white text-center" style="border:none; ">
+	</div> -->
+	<div class="col-md-12 col-sm-12 px-3 py-4 bg-white text-center" id="wavy2">
 		<blockquote class="blockquote text-center ">
 			<p class="mb-0"><h1>Professional Qualifications</h1>
 				<br><h3>NCII - Hardware Servicing <small> (2015) </small><br></p></h3>
 				<h3>CSE PPT - Professional Level<small> (2019) </small><br></p></h3>
+
 			<!-- <footer class="blockquote-footer">Paul Cookson </footer> -->
 		</blockquote>
 		<!-- <h2 class="">Professional Qualifications</h2> 
@@ -106,7 +107,7 @@
 		<h3 class="mt-1">CSE PPT - Professional Level (2019)</h3> -->
 	</div>
 	<div class="col-md-12 col-sm-12 px-3 pt-3" style=" padding-bottom: 15rem;background-image: linear-gradient(-20deg, #2b5876 0%, #4e4376 100%);" id="wavy2">
-		<h3 class="card-text text-white text-center "> Skills - ( Cont ) 
+		<h3 class="card-text text-white text-center "> Skills
 			<ul class="list-group">
 				<li class="list-group-item" style="background-color:transparent; border:none;"><i class="fas fa-paint-brush fa-flip-horizontal"></i> Photoshop and Krita <i class="fas fa-paint-brush "></i> </li>
 				<li class="list-group-item"  style="background-color:transparent; border:none;"><i class="fas fa-wrench fa-flip-horizontal"></i> OS Installation and Basic Networking <i class="fas fa-wrench"></i> </li>
@@ -183,32 +184,32 @@
 <script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.js"></script>
 <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
 <script>
-	$(window).load(function() {
-		// Animate loader off screen
-		$(".se-pre-con").fadeOut("slow");;
-	});
 var app = document.getElementById('app');
-
 var typewriter = new Typewriter(app, {
   loop: true,
   delay: 75,
 });
-
 typewriter
   .pauseFor(2500)
   .typeString('Aspiring Web Developer')
   .pauseFor(300)
   .deleteChars(25)
-//   .typeString('Residing in Bulac, Sta Maria. Bulacan')
-//   .typeString('A graduate of Bachelor Science in Computer Science')
-//   .typeString('aljonleynes11@gmail.com')
-//   .typeString('0997 669 3736')
-
   .pauseFor(1000)
   .start();
 
-	
+	var prof = document.getElementById('prof1');
+	var typewriter1 = new Typewriter(prof, {
+  loop: true,
+  delay: 75,
+});
 
-        
+typewriter1
+  .pauseFor(2500)
+  .typeString('	NCII - Hardware Servicing (2015) <br> CSE PPT - Professional Level (2019)')
+  .pauseFor(300)
+  .deleteChars(100)
+  .pauseFor(1000)
+	.deleteChars(25)
+  .start();
 
 </script>
