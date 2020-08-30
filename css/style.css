@@ -107,12 +107,13 @@ user-select: none;
 
 /* Track */
 ::-webkit-scrollbar-track {
-  background: #f1f1f1; 
+ 
+  background: #fff; 
 }
  
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: #888; 
+        background: #15b9fe; 
 }
 
 /* Handle on hover */
