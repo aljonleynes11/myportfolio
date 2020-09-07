@@ -136,7 +136,8 @@ user-select: none;
 	background:url(wave.png);
 	background-size:cover;
 	background-repeat:none;
-	background-position:center;
+        background-position:center;
+        
 }
 #wavy2:before{
 	content:'';
