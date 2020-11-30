@@ -383,6 +383,8 @@ background: linear-gradient(to right, #2657eb, #de6161); /* W3C, IE 10+/ Edge, F
 
 <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
 <script>
+	 $('.carousel').carousel({ pause: true,
+        interval: false})    
 var app = document.getElementById('app');
 var typewriter = new Typewriter(app, {
   loop: true,
