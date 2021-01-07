@@ -34,13 +34,18 @@
 	<div class="col-md-3 text-center mt-5" style="background-image: linear-gradient(to top, #15b9fe 0%, #330867 100%);" id="wavy1" >
 	
 		<div class="bg-muted mb-3 mt-3 text-white" style="width:18rems" id="card1" >
-			<img src="img/me.jpg" class="card-img-top rounded-circle  alt="...">
-
-			<div class="card-body mt-5 p-1 text-white" style="border:none; " >
-				<h3 class="card-title">Aljon B. Leynes</h3>
-				<p id="app" class="mt-5"></p>
+			
+<!-- hide on sm-->
+			<div class="card-body d-none d-sm-block d-md-none d-block d-sm-none p-1 text-white" style="border:none; " >
+				<h3 class="card-title 	">Aljon B. Leynes</h3>
+				<p id="app" class="mt-1" style="font-size: 200;"></p>
 			</div>
-
+			<img src="img/me.jpg" class="card-img-top rounded-circle  alt="...">
+<!-- show on md-->
+			<div class="card-body d-none d-md-block d-lg-none pt-5 d-lg-block d-xl-none  d-xl-block p-1 text-white" style="border:none; " >
+				<h3 class="card-title 	">Aljon B. Leynes</h3>
+				<p id="app1" class="mt-1" style="font-size: 200;"></p>
+			</div>
 			<div class="card-body p-1 text-white " style="border:none; ">
 				<h5 class="card-text mt-5">Residing on Bulac Sta. Maria Bulacan</h5>
 			</div>
@@ -414,6 +419,20 @@ typewriter1
   .pauseFor(1000)
   .start();
 
+	var typewriter = new Typewriter(app1, {
+  loop: true,
+  delay: 75,
+});
+typewriter
+  .pauseFor(2500)
+  .typeString('App Developer')
+  .pauseFor(300)
+  .deleteChars(25)
+  .typeString('Technical Support')
+  .pauseFor(800)
+  .deleteChars(25)
+  .pauseFor(1000)
+  .start();
 </script>
 
 <script type="text/javascript">
